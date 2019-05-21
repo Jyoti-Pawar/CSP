@@ -86,8 +86,10 @@ p{
 	line-height:normal;
 }
 .padding{
-	padding-bottom:90px;
-	padding-top:90px;
+	/* padding-bottom:90px;
+	padding-top:90px; */
+	padding-bottom: 50px;
+	padding-top: 25px;
 }
 .padding-top{
 	padding-top:90px;
@@ -115,9 +117,45 @@ p{
 	margin-top:15px;
 }
 .bottom5{ margin-bottom:5px;}
+
+/* margins for divs */
 .margin_top{
-	margin-top:90px;
+	/* margin-top:90px; */
+	margin-top: 40px;
+  margin-bottom: -40px;
 }
+
+.margin_get{
+	/* margin-top: -100px;
+	margin-bottom: -154px; */
+	margin-top: -115px;
+    margin-bottom: -178px;
+}
+@media screen and (max-width:320px),(min-width:375px),(min-width:425px){
+	.margin_get{
+		margin-top: 0 !important;
+    margin-bottom: 0 !important;
+	}
+}
+@media screen and (min-width:768px){
+	.margin_get{
+		margin-top: -58px !important;
+    margin-bottom: -70px !important;
+	}
+}
+@media screen and (min-width:1024px){
+	.margin_get{
+		margin-top: -72px !important;
+    margin-bottom: -126px !important;
+	}
+}
+@media screen and (min-width:1440px){
+	.margin_get{
+		margin-top: -106px !important;
+    margin-bottom: -170px !important;
+	}
+}
+
 .bottom20{ margin-bottom:20px;}
 .top20{ margin-top:20px;}
 .bottom15{ margin-bottom:15px;margin-top: 15px;}
@@ -1163,6 +1201,48 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand > .logo-display,
 	}
 }
 
+.adjustBlock{
+		width: 50%;
+    height: 50%;
+    margin-left: 320px;
+}
+
+@media screen and (max-width:320px),(min-width:375px),(min-width:425px){
+	.adjustBlock{
+		width: 100% !important;
+		height: 100% !important;
+		margin-left: 0px !important;
+	}
+}
+@media screen and (min-width:768px){
+	.adjustBlock{
+		width: 60% !important;
+    height: 60% !important;
+    margin-left: 170px !important;
+	}
+}
+@media screen and (min-width:1024px){
+	.adjustBlock{
+		width: 60% !important;
+    height: 60% !important;
+    margin-left: 203px !important;
+	}
+}
+@media screen and (min-width:1440px){
+	.adjustBlock{
+		width: 60% !important;
+    height: 60% !important;
+    margin-left: 254px !important;
+	}
+}
+@media screen and (min-width:2560px){
+	.adjustBlock{
+		width: 60% !important;
+    height: 60% !important;
+    margin-left: 250px !important;
+	}
+}
+
 /*map*/
 #map{
 	border: 4px solid #4587d9;
@@ -1227,7 +1307,14 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand > .logo-display,
 /* carousel*/
 
 .carousel-control     		 { width:  4%; }
-.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+.carousel-control.left,.carousel-control.right {
+	/* margin-left:15px;
+	background-image:none; */
+	margin-left: -50px;
+	margin-bottom: 146px;
+	margin-right: -50px;
+	background-image: none;
+}
 @media (max-width: 767px) {
 	.carousel-inner .active.left { left: -100%; }
 	.carousel-inner .next        { left:  100%; }
