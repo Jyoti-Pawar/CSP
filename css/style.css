@@ -92,7 +92,7 @@ p{
 	padding-top: 25px;
 }
 .padding-top{
-	padding-top:90px;
+	padding-top:50px;
 }
 .padding-bottom{
 	padding-bottom:90px;
@@ -128,8 +128,8 @@ p{
 .margin_get{
 	/* margin-top: -100px;
 	margin-bottom: -154px; */
-	margin-top: -115px;
-    margin-bottom: -178px;
+	/* margin-top: -115px;
+    margin-bottom: -178px; */
 }
 @media screen and (max-width:320px),(min-width:375px),(min-width:425px){
 	.margin_get{
@@ -620,6 +620,7 @@ nav.navbar.bootsnav.no-full .navbar-collapse.in {
 }
 /*arrows Slider*/
 .tparrows{
+	display: none;
   background:#ffb600 !important;
   -webkit-border-radius:100%;
   border-radius:4px;
@@ -1160,11 +1161,10 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand > .logo-display,
 
 /*video*/
 .adjust{
-	width: 80%;
-	height: 80%;
-	margin-left: 124px;
-}
-@media screen and (max-width:320px){
+    width: 100%;
+    height: 100%;
+ }
+/*@media screen and (max-width:320px){
 	.adjust{
 		width: 100% !important;
 		margin-left: 0px !important;
@@ -1190,16 +1190,19 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand > .logo-display,
 }
 @media screen and (min-width:1024px){
 	.adjust{
-		width: 80% !important;
-		margin-left: 100px !important;	
+		width: 60% !important;
+		margin-left: 207px !important;	
 	}
 }
 @media screen and (min-width:1440px){
 	.adjust{
-		width: 80% !important;
-		margin-left: 125px !important;	
+		/* width: 80% !important;
+		margin-left: 125px !important;	 *
+	    width: 60% !important;
+    /* height: 60% !important; *
+    margin-left: 247px !important;
 	}
-}
+} */
 
 .adjustBlock{
 		width: 50%;
@@ -1372,3 +1375,108 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand > .logo-display,
 		margin-left: 13%;
 	}
 } */
+.design{
+	padding: 4px;
+	color: #00abbd;
+}
+a:hover{
+	color: white;
+}
+.stylish{
+	font-family: 'museo_slab500';
+}
+
+/*Registration form*/
+
+.font{
+	color: red;
+}
+/* input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  /* padding: 15px;
+  margin: 5px 0 22px 0; *
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+} */
+
+hr {
+  border: 1px solid #ffb600;
+  margin-bottom: 25px;
+}
+.deco{
+	color: #ffb600;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+input[type=radio] {
+	margin: 4px 4px 0px;
+	margin-top: 1px\9;
+	line-height: normal;
+}
+input[type=checkbox] {
+	margin: 4px 4px 0px;
+}
+.formbtn{
+    font-size: 18px;
+    width: 100px;
+    line-height: 1.3333333;
+}
+
+/* form wizard */
+.stepwizard-step p {
+	margin-top: 10px;
+}
+.stepwizard-row {
+	display: table-row !important;
+}
+.stepwizard {
+	display: table;
+	width: 50%;
+	position: relative;
+}
+.stepwizard-step button[disabled] {
+	opacity: 1 !important;
+	filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+	top: 14px;
+	bottom: 0;
+	position: absolute;
+	content: " ";
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+	z-order: 0;
+}
+.stepwizard-step {
+	display: table-cell;
+	text-align: center;
+	position: relative;
+}
+.btn-circle {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 3px 0;
+  font-size: 16px;
+	/* padding: 6px 0;
+	font-size: 12px; */
+	line-height: 1.428571429;
+	/* border-radius: 15px; */
+	/* background-color: #ffb600;
+	border-color: #ffb600; */
+}
