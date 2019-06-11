@@ -1159,6 +1159,13 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand > .logo-display,
 	}
 }
 
+.manage{
+	height: 500px;
+    max-height: 670px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 /*video*/
 .adjust{
     width: 100%;
