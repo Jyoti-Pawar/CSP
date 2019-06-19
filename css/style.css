@@ -1549,6 +1549,9 @@ input[type=checkbox] {
     color: #fff;
     opacity: 0.8;
   }
+  .styl:hover{
+	  color: #fff !important;
+  }
   .sidenav .closebtn {
 	position: absolute;
 	top: 0;
