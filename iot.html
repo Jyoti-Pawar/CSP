@@ -20,9 +20,9 @@
 
     <link rel="icon" href="images/csp_logo_favicon.png">
     <style>
-        .tparrows {
+        /* .tparrows {
             display: none !important;
-        }
+        } */
     </style>
 </head>
 
@@ -35,45 +35,94 @@
         </div>
     </div>
 
-    <div class="topbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="pull-left">
-                        <span class="info"><a href="#."> Have any question?</a></span>
-                        <span class="info"><i class="icon-phone2"></i>080 4140 0440</span>
-                        <span class="info"><i class="icon-mail"></i>info@phemesoft.com</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!--Header-->
     <header>
         <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="images/csp_logo.png" alt="Logo"
+                    <a class="navbar-brand" href="#">
+                        <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;"
                             class="logo logo-display">
-                        <img src="images/csp_logo.png" class="logo logo-scrolled" alt="Logo">
+                        <img src="images/IBM_ICE.jpg" style="width: 180px !important;" class="logo logo-scrolled"
+                            alt="Logo">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOut">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#courses">Courses</a></li>
-                        <li><a href="index.html#contact">Contact Us</a></li>
-                        <!-- <li><a href="#">Registration</a></li> -->
-                        <li><a style="cursor:pointer;" data-toggle="modal" data-target="#login">Login</a></li>
+                        <li><a href="certificate.html">IBM Global Certificate</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specialization</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="artificial.html">Artificial Intelligence</a></li>
+                                <li><a href="blockchain.html">Blockchain</a></li>
+                                <li><a href="BA.html">Business Analytics</a></li>
+                                <li><a href="cybersecu.html">Cyber Security</a></li>
+                                <li><a href="datascience.html">Data Science</a></li>
+                                <li><a href="iot.html">Internet of Things</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Registration</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a data-toggle="modal" data-target="#login" style="cursor: pointer;">Login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <div class="navbar-fixed-top main-menu-continer" style="top: 200px !important;">
+            <button type="button" class="btn menubar-toggle styl" onclick="openNav()">
+                <!-- <i class="fa fa-bars"></i> -->Menu
+            </button>
+
+            <div id="mySidenav" class="sidenav">
+                <ul>
+                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                    <li>
+                        <a href="index.html"><img src="images/sidebar/home.ico"
+                                style="height:30px!important;padding-right: inherit;" />Home</a></li>
+                    <hr>
+                    <li>
+                        <a href="certificate.html"><img src="images/sidebar/certificate.ico"
+                                style="height:30px!important;padding-right: inherit;" />IBM Global Certificate</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <button class="dropdown-btn"><a><img src="images/sidebar/courses.ico"
+                                    style="height:30px!important;padding-right: inherit;" />Specialization<i
+                                    class="fa fa-caret-down"
+                                    style="padding-left: 4px;font-size: large;"></i></a></button>
+                        <ul class="dropdown-container">
+                            <li> <a href="artificial.html"><i class="fa fa-search"
+                                        style="padding-right: 12px;"></i>Artificial
+                                    Intelligence</a></li>
+                            <li><a href="blockchain.html"><i class="fa fa-search"
+                                        style="padding-right: 12px;"></i>Blockchain</a></li>
+                            <li><a href="BA.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Business
+                                    Analytics</a></li>
+                            <li><a href="cybersecu.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Cyber
+                                    Security</a></li>
+                            <li><a href="datascience.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Data
+                                    Science</a></li>
+                            <li><a href="iot.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Internet of
+                                    Things</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#"><img src="images/sidebar/reg.ico"
+                                style="height:30px!important;padding-right: inherit;" />Registration</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="contact.html"><img src="images/sidebar/contact.ico"
+                                style="height:30px!important;padding-right: inherit;" />Contact</a>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <!--Slider-->
@@ -84,7 +133,7 @@
                 <!-- SLIDE  -->
                 <li data-transition="fade">
                     <!-- MAIN IMAGE -->
-                    <img src="images/IOT_banner.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                    <img src="images/IOT/banner.jpg" alt="banner" data-bgposition="center center" data-bgfit="cover"
                         data-bgparallax="10" class="rev-slidebg">
                     <!-- LAYER NR. 1 -->
                     <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
@@ -94,6 +143,7 @@
                         data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
                         data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
                         data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="800">
+                        <!-- <h1>Artificial Intelligence</h1> -->
                     </div>
                     <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
                         data-hoffset="['0','0','0','0']" data-y="['380','340','300','350']"
@@ -101,6 +151,7 @@
                         data-visibility="['on','on','off','off']" data-transform_idle="o:1;"
                         data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;"
                         data-transform_out="opacity:0;s:1000;s:1000;" data-start="1500">
+                        <!-- <p>Skill for better livelihood and stronger economy.</p> -->
                     </div>
                     <div class="tp-caption  tp-resizeme" data-x="['center','center','center','center']"
                         data-hoffset="['0','0','0','0']" data-y="['450','390','350','250']"
@@ -114,70 +165,120 @@
                 </li>
             </ul>
         </div><!-- END REVOLUTION SLIDER -->
-    </section>
+    </section><br>
 
 
     <!--About course-->
-    <section id="" class="padding" style="padding-top:0px;">
-        <div class="container margin_top">
+    <section id="ai">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12 priorty wow fadeInLeft text-center" data-wow-delay="300ms">
-                    <h2 class="heading bottom25">Internet of Thing<span class="divider-center"></span></h2>
-                    <p class="half_space" style="text-align:justify;">This course covers in-depth concepts of IoT
-                        framework, IoT ecosystem, IoT solution architecture, networking protocols and application layer
-                        protocols. This course will have case studies which will help you master the IoT technology.
+                    <h2 class="heading bottom25">Internet Of Things<span class="divider-center"></span></h2>
+                    <p class="half_space text-justify">
+                        This course covers in-depth concepts of IoT framework, IoT ecosystem, IoT solution architecture,
+                        networking protocols and application layer protocols. It also provides case studies which will
+                        help the student master the IoT technology. The Internet of Things (IoT) is expanding at a rapid
+                        rate, and it is becoming increasingly important for professionals to understand what it is, how
+                        it works, and how to harness its power to improve business. This introductory course will enable
+                        learners to leverage their business and/or technical knowledge across IoT-related functions in
+                        the workplace.
                     </p>
-                    <!-- <p style="text-align: justify;">
-                        From air conditioners that you can control with your smartphone to smart cars providing the
-                        shortest route or your smartwatch which is tracking your daily activities. Some of the
-                        applications of IoT are smart home, IoT in agriculture, connected cars, wearables,
-                        transportation, digital health and smart cities.
-                    </p> -->
+                </div>
+            </div><br>
+        </div>
+    </section><br>
+    <!--About-->
+
+    <!-- Video -->
+    <section id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="wrap">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                            <!-- <iframe width="100%" height="315" src="video/Block_chain.mp4"></iframe> -->
+                            <!-- <h1>Blockchain</h1> -->
+                            <!-- <iframe src="https://player.vimeo.com/video/55806355" width="100%" height="360" frameborder="0"
+								webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
                 </div>
             </div>
         </div>
     </section>
-    <!--About-->
 
-    <section class="bottom25">
+    <section class="padding bottom25" style="padding-bottom: 0px;">
         <div class="container">
+            <center>
+                <h2 class="heading bottom25">Market Trends And Predictions<span class="divider-left"></span></h2>
+            </center>
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="heading bottom25">Skills Required<span class="divider-left"></span></h2>
-                    <ul style="font-family: 'Roboto', sans-serif;">
-                        <li><i class="design fa fa-hand-o-right"></i>Basic computer programming skills</li>
-                        <li><i class="design fa fa-hand-o-right"></i>Analytics skills</li>
-                        <li><i class="design fa fa-hand-o-right"></i>User interface and gateways</li>
+                <div class="col-md-7">
+                    <img class="img-responsive" src="images/IOT/market.png" alt="graph">
+                </div>
+                <div class="col-md-5">
+                    <p class="half_space text-justify">Worldwide technology spending on the Internet of Things to reach
+                        $1.2T in 2022, attaining a CAGR of 13.6% over the 2017-2022 forecast period according to IDC.
+                    </p>
+                    <h4 class="siz">Salary Trends</h4>
+                    <ul style="list-style: inherit;">
+                            <li>Globally average salary is $92,283 per annum</li>
+                        <li>Median salary in India is ₹15.2lpa across all skill sets</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="msu" class="">
+    <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <h2 class="heading bottom25">Market Forecast<span class="divider-left"></span></h2>
-                    <p style="text-align: justify;">IDC predicts that the consumer sector will lead IoT spending growth
-                        with a worldwide CAGR of 19%, followed closely by the insurance and healthcare provider
-                        industries.
-                    </p>
-                    <!-- <p class="half_space" style="text-align:justify;"> Worldwide technology spending on the Internet of
-                        Things to reach $1.2T in 2022, attaining a Compound Annual Growth Rate (CAGR) of 13.6% over the
-                        2017-2022 forecast period. IDC predicts that the consumer sector will lead IoT spending growth
-                        with a worldwide CAGR of 19%, followed closely by the insurance and healthcare provider
-                        industries. From a total spending perspective, discrete manufacturing and transportation will
-                        each exceed $150B in spending in 2022, making these the two largest industries for IoT spending.
-                    </p>
-                    <p style="text-align: justify;">The market for Industry 4.0 products and services is expected to
-                        grow to $310B by 2023. IoT Analytics is predicting global spending on Industry 4.0 products and
-                        services will soar from $119B in 2020 to $310B in 2023, attaining a 27.04% CAGR.
-                    </p> -->
+                <div class="col-md-6">
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="images/AIML/jobs.jpg">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="item">
+                            <h4 class="siz">Job Roles</h4>
+                            <ul style="list-style: inherit;">
+                                <li>Network engineer </li>
+                                <li>Backend developer</li>
+                                <li>Technical consultant</li>
+                                <li>Machine learning engineer</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="images/IOT1.jpg" class="img-responsive">
+                <div class="col-md-6">
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="images/AIML/jobs.jpg">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="item">
+                            <h4 class="siz">Skills Required</h4>
+                            <ul style="list-style: inherit;">
+                                <li>Programming</li>
+                                <li>Networking</li>
+                                <li>Analytics</li>
+                                <li>Network security</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section><br>
+
+    <section id="companies">
+        <div class="container">
+            <center>
+                <h2 class="heading">Companies Hiring<span class="divider-left"></span></h2>
+            </center>
+            <div class="row">
+                <center><img class="img-responsive" src="images/datascience/companies.PNG" alt="company"></center>
             </div>
         </div>
     </section><br>
@@ -187,43 +288,45 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="heading heading_space bottom25">Subjects<span class="divider-left"></span>
-                    </h2>
+                    <center>
+                        <h2 class="heading heading_space bottom25">Subjects<span class="divider-left"></span>
+                        </h2>
+                    </center>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="col-md-6 res">
                         <div class="item active">
-                            <div class="col-md-4 col-sm-6 col-xs-12"><img src="images/subjects/IOTS1.png"
+                            <div class="col-md-4 col-sm-6 col-xs-12"><img src="images/IOT/IOTS1.png"
                                     class="img-responsive">
-                                <h4 class="bottom15"><strong>Introduction to IoT</strong></h4>
-                                <p class="bottom15" style="text-align: justify;">This subject introduces IoT and
-                                    technologies behind smart and intelligent devices and how to learn basics of IoT
-                                    application development using python application.
+                                <h4 class="bottom15"><strong>Introduction To IoT</strong></h4>
+                                <p class="bottom15 text-justify">This subject introduce the IoT and technologies behind
+                                    smart and intelligent devices and how to learn basics of IoT application development
+                                    using python application.
                                 </p>
                             </div>
                         </div>
 
                         <div class="item">
-                            <div class="col-md-4 col-sm-6 col-xs-12"><img src="images/subjects/IOTS2.png"
+                            <div class="col-md-4 col-sm-6 col-xs-12"><img src="images/IOT/IOTS2.png"
                                     class="img-responsive">
-                                <h4 class="bottom15"><strong>IoT enterprise solution architecture</strong></h4>
-                                <p class="bottom15" style="text-align: justify;">This subject helps to gain knowledge on
-                                    providing the business solution for wide-ranging industries. It also introduces to
-                                    the applications of IoT, types of IoT systems and solutions across wide-ranging
+                                <h4 class="bottom15"><strong>IoT Enterprise Solution Architecture</strong></h4>
+                                <p class="bottom15 text-justify">This subject helps to gain knowledge on providing the
+                                    business solution for wide-ranging industries. It also introduces to the
+                                    applications of IoT, types of IoT systems and solutions across wide-ranging
                                     industries.
                                 </p>
                             </div>
                         </div>
 
                         <div class="item">
-                            <div class="col-md-4 col-sm-6 col-xs-12"><img src="images/subjects/IOTS3.jpg"
+                            <div class="col-md-4 col-sm-6 col-xs-12"><img src="images/IOT/IOTS3.jpg"
                                     class="img-responsive">
-                                <h4 class="bottom15"><strong>Industry application development using IoT</strong></h4>
-                                <p class="bottom15" style="text-align: justify;">This subject helps to gain knowledge on
-                                    developing an IoT applications for various industries. It also provides an overview
-                                    of IoT application case studies for various industries.
+                                <h4 class="bottom15"><strong>Industry Application Development Using IoT</strong></h4>
+                                <p class="bottom15 text-justify">This subject helps to gain knowledge on developing an
+                                    IoT applications for various industries. It also provides an overview of IoT
+                                    application case studies for various industries.
                                 </p>
                             </div>
                         </div>
@@ -234,24 +337,23 @@
     </section>
     <!-- Courses -->
 
-
-    <!--Fun Facts-->
-    <section id="facts" class="padding" style="background: rgb(229, 227, 223)">
+    <!-- skill development -->
+    <section class="">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center wow fadeInDown">
-                    <h2 class="heading bottom25">Internet of Things<span class="divider-center"></span></h2>
+                <div class="col-md-12">
+                    <center>
+                        <h2 class="heading heading_space bottom25">Skill Development Ecosystem<span
+                                class="divider-left"></span>
+                        </h2>
+                    </center>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div>
-                        <video class="adjustBlock" autoplay="autoplay" muted controls>
-                            <source src="video/IOT.mp4" type="video/mp4">
-                        </video>
-                    </div>
+                    <img class="img-responsive" src="images/IBM_ICE_skills.png" alt="skills">
                 </div>
-            </div>
+            </div><br>
         </div>
     </section>
 
@@ -274,11 +376,11 @@
                                 </a>
                             </div>
                             <!-- <div class="col-md-6" style="text-align: center;">
-                                <a href="http://www.phemesoft.com/" target="_blank" data-placement="bottom"
-                                    title="Click to login">
-                                    <img src="images/CATIA-logo.png" alt="CATIA" class="logo ">
-                                </a>
-                            </div> -->
+                                    <a href="http://www.phemesoft.com/" target="_blank" data-placement="bottom"
+                                        title="Click to login">
+                                        <img src="images/CATIA-logo.png" alt="CATIA" class="logo ">
+                                    </a>
+                                </div> -->
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -290,48 +392,21 @@
     </div>
     <!-- modal end -->
 
+    <!-- register float -->
+    <button class="open-button" href="">Click to Register</button>
 
     <!--FOOTER-->
-    <footer class="padding-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 footer_panel bottom25">
-                    <h3 class="heading bottom25">About Us<span class="divider-left"></span></h3>
-                    <p style="text-align: justify;">We offer the world class training facility for developing higher
-                        order skills demanded by the employer industries.</p>
-                </div>
-
-                <div class="col-md-4 col-sm-4 footer_panel bottom25">
-                    <h3 class="heading bottom25">Quick Links<span class="divider-left"></span></h3>
-                    <ul class="links">
-                        <li><a href="index.html"><i class="icon-chevron-small-right"></i>Home</a></li>
-                        <li><a href="index.html#about"><i class="icon-chevron-small-right"></i>About Us</a></li>
-                        <li><a href="index.html#courses"><i class="icon-chevron-small-right"></i>Courses</a></li>
-                        <li><a href="index.html#contact"><i class="icon-chevron-small-right"></i>Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 col-sm-4 footer_panel bottom25">
-                    <h3 class="heading bottom25">Keep in Touch <span class="divider-left"></span></h3>
-                    <p class=" address"><i class="icon-map-pin"></i>ASAP Community Skill Park </p>
-                    <p class=" address">NAD Rd, HMT Colony, North Kalamassery, HMT Kalamassery,
-                        Ernakulam, Kerala 683503</p>
-                    <p class=" address"><i class="icon-phone"></i>080 4140 0440</p>
-                    <p class=" address"><i class="icon-mail"></i><a
-                            href="mailto:info@phemesoft.com">info@phemesoft.com</a></p>
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>All rights reserved &copy; IBM India</p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>All rights reserved &copy; IBM.</p>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--FOOTER ends-->
 
 
@@ -354,11 +429,70 @@
     <script src="js/functions.js"></script>
 
     <script>
-        var revapi;
-        revapi = jQuery("#rev_slider").revolution({
-            gridwidth: [1170, 960, 750, 480],
-            gridheight: [480, 600, 500, 390],
-        });
+        // var revapi;
+        // revapi = jQuery("#rev_slider").revolution({
+        //     gridwidth: [1170, 960, 750, 480],
+        //     gridheight: [480, 600, 500, 390],
+        // });
+
+        // navbar icon
+
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+        }
+
+        //  dropdown
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+        // video
+
+        /*Floating Code for Iframe Start*/
+        if (jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"],iframe[src*="https://player.vimeo.com/"]').length > 0) {
+            /*Wrap (all code inside div) all vedio code inside div*/
+            jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').wrap("<div class='iframe-parent-class'></div>");
+            /*main code of each (particular) vedio*/
+            jQuery('iframe[src*="https://www.youtube.com/embed/"],iframe[src*="https://player.vimeo.com/"]').each(function (index) {
+
+                /*Floating js Start*/
+                var windows = jQuery(window);
+                var iframeWrap = jQuery(this).parent();
+                var iframe = jQuery(this);
+                var iframeHeight = iframe.outerHeight();
+                var iframeElement = iframe.get(0);
+                windows.on('scroll', function () {
+                    var windowScrollTop = windows.scrollTop();
+                    var iframeBottom = iframeHeight + iframeWrap.offset().top;
+                    //alert(iframeBottom);
+
+                    if ((windowScrollTop > iframeBottom)) {
+                        iframeWrap.height(iframeHeight);
+                        iframe.addClass('stuck');
+                        jQuery(".scrolldown").css({ "display": "none" });
+                    } else {
+                        iframeWrap.height('auto');
+                        iframe.removeClass('stuck');
+                    }
+                });
+                /*Floating js End*/
+            });
+        }
     </script>
 
 </body>

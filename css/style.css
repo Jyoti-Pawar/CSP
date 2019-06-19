@@ -1,7 +1,8 @@
 @charset "utf-8"; 
 
 @font-face {
-    font-family: 'museo_slab500';
+	/* font-family: 'museo_slab500'; */
+	font-family: ibm-plex-sans,"Helvetica Neue",Arial,sans-serif;
     src: url('../fonts/museo_slab_0-webfont.woff2') format('woff2'),
          url('../fonts/museo_slab_0-webfont.woff') format('woff');
     font-weight: normal;
@@ -9,7 +10,8 @@
 
 }
 @font-face {
-    font-family: 'museo_slab700';
+	/* font-family: 'museo_slab700'; */
+	font-family: ibm-plex-sans,"Helvetica Neue",Arial,sans-serif;
     src: url('../fonts/museo_slab_1-webfont.woff2') format('woff2'),
          url('../fonts/museo_slab_1-webfont.woff') format('woff');
     font-weight: normal;
@@ -29,7 +31,8 @@ body{
 	line-height:1.5em;
 	font-size:1em;
 	overflow-x: hidden;
-	font-family: 'Source Sans Pro';
+	/* font-family: 'Source Sans Pro'; */
+	font-family: ibm-plex-sans,"Helvetica Neue",Arial,sans-serif;
 }
 body,html{
 	height:100%;
@@ -40,17 +43,20 @@ body,html{
 /*Share Common Font Family*/
 #rev_slider h1, #rev_slider_full h1, #rev_slider_video h1, #text_rotator h1, h3, .page_header .page-content h1, .aboutus h4, .events h4, .items > li > a, #error .error h1, 
 .shopping_box h4, .shop_tab .tabs li, .pushmenu .push_nav > li > a > span{
-	font-family: 'museo_slab500';
+	/* font-family: 'museo_slab500'; */
+	font-family: ibm-plex-sans,"Helvetica Neue",Arial,sans-serif;
 }
 h2, #about .priorty .about-post h4, .icon_box h4, .contact_address .address h4, .number-counters .counters-item strong,  #parallax h1,
 .reviews .review_left strong, #error .error h2,
 .shopping_box h4.price_product, .cart_table .price_product, .cart_table .product-name h4,
 nav.bootsnav .megamenu-content .title{
-	font-family: 'museo_slab700';
+	/* font-family: 'museo_slab700'; */
+	font-family: ibm-plex-sans,"Helvetica Neue",Arial,sans-serif;
 }
 
 p{
-	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Roboto', sans-serif; */
+	font-family: ibm-plex-sans,"Helvetica Neue",Arial,sans-serif;
 	font-size:1em;
 }
 
@@ -180,6 +186,7 @@ p{
 .heading{
 	border-bottom:1px solid #dadada;
 	display:inline-block;
+	font-weight: 600;
 }
 .heading .divider-left, .heading .divider-center{
 	height:4px;
@@ -434,7 +441,7 @@ ul.social_icon li a:hover {
 }
 /*Back to top Button*/
 .scrollToTop{
-  width:32px; 
+  /* width:32px; 
   height:32px;
   border-radius:4px; 
   text-align:center; 
@@ -446,7 +453,21 @@ ul.social_icon li a:hover {
   bottom:16px;
   right:40px;
   display:none;
-  background:#ffb600;
+  background:#ffb600; */
+  width: 36px;
+  height: 32px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 25px;
+  position: fixed;
+  z-index: 1000;
+  bottom: 16px;
+  right: 165px;
+  display: none;
+  background: #3B5998;
+  opacity: 0.8;
 }
 .scrollToTop:hover{
 	background:#4587d9;
@@ -552,6 +573,7 @@ nav.navbar.bootsnav.sticked .navbar-brand, nav.navbar.bootsnav.navbar-fixed .nav
 }
 nav.navbar.bootsnav .navbar-brand img, nav.navbar.bootsnav.navbar-fixed.no-background .navbar-brand img{
 	width:110px;
+	/* width: 165px; */
 }
 nav.navbar.bootsnav.sticked .navbar-brand img, nav.navbar.bootsnav.navbar-fixed .navbar-brand img{
 	width:90px;
@@ -566,7 +588,8 @@ nav.navbar.bootsnav ul.nav > li > a{
   text-transform:uppercase;
   position:relative;
   overflow:hidden;
-  font-family: 'Source Sans Pro';
+  /* font-family: 'Source Sans Pro'; */
+  font-family: ibm-plex-sans,"Helvetica Neue",Arial,sans-serif;
 }
 nav.navbar.bootsnav ul.nav > li > a,
 nav.navbar.bootsnav.navbar-fixed.no-background ul.nav > li > a{
@@ -584,7 +607,10 @@ nav.navbar.bootsnav ul.nav > li.active > a{
 nav.bootsnav .megamenu-content .title{
 	font-size:1.125em;
 }
-.navbar-right { margin-right:0; }
+.navbar-right {
+	 margin-right:0; 
+	 /* margin-right: 100px; */
+	}
 nav.bootsnav .megamenu-content{ border-radius:0 0px 4px 4px !important}
 nav.navbar.bootsnav.no-full .navbar-collapse.in {
   min-height:280px !important;
@@ -756,7 +782,7 @@ nav.navbar.bootsnav.no-full .navbar-collapse.in {
 .icon_box:hover{
 	background:#4587d9;
 	color:#fff;
-	cursor:pointer;
+	/* cursor:pointer; */
 	border-radius:4px;
 }
 
@@ -1390,7 +1416,8 @@ a:hover{
 	color: white;
 }
 .stylish{
-	font-family: 'museo_slab500';
+	/* font-family: 'museo_slab500'; */
+	font-family: ibm-plex-sans,"Helvetica Neue",Arial,sans-serif;
 }
 
 /*Registration form*/
@@ -1487,3 +1514,226 @@ input[type=checkbox] {
 	/* background-color: #ffb600;
 	border-color: #ffb600; */
 }
+
+/* new navbar */
+
+.sidenav {
+	display: none;
+	height: 100%;
+	width: 225px;
+	/* width: 241px; */
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #3B5998;
+	overflow-x: hidden;
+	padding-top: 60px;
+	opacity: 0.8;
+  }
+  
+  .sidenav a {
+	/* padding: 8px 8px 10px 32px; */
+	padding: 5px 10px 0px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+	color: #fff;
+  }
+  .styl{
+	background-color: #3B5998;
+    color: #fff;
+    opacity: 0.8;
+  }
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  hr {
+    border: 1px solid #fff !important;
+    margin-bottom: 0px !important;
+  }
+  .mt{
+	margin-top: -19px;
+  }
+  .ml{
+	margin-left: 50px;
+  }
+  .logo1{
+	width: 150px !important;
+  }
+  .dropdown-btn {
+	/* padding: 6px 8px 6px 16px; */
+	text-decoration: none;
+	font-size: 20px;
+	/* color: #818181; */
+	padding-left: initial;
+	display: block;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+  }
+  .dropdown-container a{
+	  font-size: 14px;
+  }
+  .dropdown-container {
+	display: none;
+	  background-color: #646361;
+	  list-style: none;
+	  padding: inherit;
+	  text-align: justify;
+  }
+  @media screen and (max-width: 320px) {
+	.dropdown-container  {
+    background-color: #3B5998;
+	  display: none;
+    list-style: none;
+    /* padding-left: 45px; */
+    text-align: -webkit-auto;
+	}
+  }
+  @media screen and (min-width: 375px) {
+    .dropdown-container  {
+      display: none;
+      background-color: #3B5998;
+      list-style: none;
+      padding: none;
+      text-align: -webkit-auto;
+      /* padding-left: 64px; */
+    }
+    }
+    @media screen and (min-width: 425px) {
+      .dropdown-container  {
+        display: none;
+        background-color: #3B5998;
+        list-style: none;
+        padding: none;
+        text-align: -webkit-auto;
+        /* padding-left: 100px; */
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .dropdown-container  {
+        display: none;
+        background-color: #3B5998;
+        list-style: none;
+        padding: none;
+        text-align: -webkit-auto;
+        /* padding-left: 255px; */
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      .dropdown-container  {        
+      display: none;
+      background-color: #3B5998 !important;
+      list-style: none;
+	  /* padding: inherit !important; */
+	  padding: initial !important;
+      text-align: -webkit-auto;
+      }
+	}
+	.dropdown-menu li a{
+		text-align: left !important;
+	}
+	/* .sidenav li{
+		display: inline-flex;
+		padding-left: 14px;
+		padding-top: 10px;
+	}
+	.sidenav li a{
+		padding-left: inherit;
+	} */
+	.text-justify{
+		text-align:justify;
+		line-height: 1.625rem;
+	}
+/* video */
+@keyframes fade-in-up {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+.stuck {
+	position: fixed;
+	bottom: 64px;
+	right: 10px;
+	transform: translateY(100%);
+	width: 260px;
+	height: 145px;
+	animation: fade-in-up .25s ease forwards;
+	z-index: 999;
+	border: none;
+}
+/*Floating CSS End*/
+@keyframes example {
+	0% {
+		background-color: red;
+	}
+
+	25% {
+		background-color: #ff7037;
+	}
+
+	50% {
+		background-color: red;
+	}
+
+	100% {
+		background-color: #ff7037;
+	}
+}
+p.scrolldown {
+	width: 200px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid;
+	background: #ff7037;
+	position: fixed;
+	right: 75px;
+	color: #fff;
+	-webkit-animation-name: example;
+	/* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s;
+	/* Safari 4.0 - 8.0 */
+	animation-name: example;
+	animation-duration: 2s;
+}
+
+/* register button */
+.open-button {
+	background-color: #3B5998;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 6px;
+	right: 10px;
+	/* width: 280px; */
+  }
+  .siz{
+	margin-bottom: 8px;
+	font-weight: 600;
+  }
+  #map{
+    border: 4px solid #4587d9;
+    width: 100% !important;
+    height: 400px !important;
+  }

@@ -35,50 +35,89 @@
     </div>
   </div>
 
-  <div class="topbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="pull-left">
-            <span class="info"><a href="#."> Have any question?</a></span>
-            <span class="info"><i class="icon-phone2"></i>080 4140 0440</span>
-            <span class="info"><i class="icon-mail"></i>info@phemesoft.com</span>
-          </div>
-          <!-- <ul class="social_top pull-right">
-          <li><a href="#."><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#."><i class="icon-twitter4"></i></a></li>
-          <li><a href="#."><i class="icon-google"></i></a></li>
-        </ul>-->
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!--Header-->
   <header>
     <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+          <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
             <i class="fa fa-bars"></i>
-          </button>
-          <a class="navbar-brand" href="#"><img src="images/csp_logo.png" alt="Logo" class="logo logo-display">
-            <img src="images/csp_logo.png" class="logo logo-scrolled" alt="Logo">
+          </button> -->
+          <a class="navbar-brand" href="#">
+            <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;" class="logo logo-display">
+            <img src="images/IBM_ICE.jpg" style="width: 180px !important;" class="logo logo-scrolled" alt="Logo">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOut">
-            <li><a style="font-family: 'museo_slab500';" href="#">Home</a></li>
-            <li><a style="font-family: 'museo_slab500';" href="#about">About Us</a></li>
-            <li><a style="font-family: 'museo_slab500';" href="#courses">Courses</a></li>
-            <li><a style="font-family: 'museo_slab500';" href="#contact">Contact Us</a></li>
-            <!-- <li><a style="font-family: 'museo_slab500';" href="register.php">Registration</a></li> -->
-            <li><a style="cursor:pointer;font-family: 'museo_slab500';" data-toggle="modal"
-                data-target="#login">Login</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="certificate.html">IBM Global Certificate</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specialization</a>
+              <ul class="dropdown-menu">
+                <li><a href="artificial.html">Artificial Intelligence</a></li>
+                <li><a href="blockchain.html">Blockchain</a></li>
+                <li><a href="BA.html">Business Analytics</a></li>
+                <li><a href="cybersecu.html">Cyber Security</a></li>
+                <li><a href="datascience.html">Data Science</a></li>
+                <li><a href="iot.html">Internet of Things</a></li>
+              </ul>
+            </li>
+            <li><a href="">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a data-toggle="modal" data-target="#login" style="cursor: pointer;">Login</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <div class="navbar-fixed-top main-menu-continer" style="top: 200px !important;">
+      <button type="button" class="btn menubar-toggle styl" onclick="openNav()">
+        <!-- <i class="fa fa-bars"></i> -->Menu
+      </button>
+
+      <div id="mySidenav" class="sidenav">
+        <ul>
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li>
+            <a href="index.html"><img src="images/sidebar/home.ico"
+                style="height:30px!important;padding-right: inherit;" />Home</a></li>
+          <hr>
+          <li>
+            <a href="certificate.html"><img src="images/sidebar/certificate.ico"
+                style="height:30px!important;padding-right: inherit;" />IBM Global Certificate</a>
+          </li>
+          <hr>
+          <!-- <a href="#">Specialization</a><hr> -->
+          <li>
+            <button class="dropdown-btn"><a><img src="images/sidebar/courses.ico"
+                  style="height:30px!important;padding-right: inherit;" />Specialization<i class="fa fa-caret-down"
+                  style="padding-left: 4px;font-size: large;"></i></a></button>
+            <ul class="dropdown-container">
+              <li> <a href="artificial.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Artificial
+                  Intelligence</a></li>
+              <li><a href="blockchain.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Blockchain</a></li>
+              <li><a href="BA.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Business Analytics</a></li>
+              <li><a href="cybersecu.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Cyber Security</a></li>
+              <li><a href="datascience.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Data Science</a></li>
+              <li><a href="iot.html"><i class="fa fa-search" style="padding-right: 12px;"></i>Internet of Things</a>
+              </li>
+            </ul>
+          </li>
+          <hr>
+          <li>
+            <a href="#"><img src="images/sidebar/reg.ico"
+                style="height:30px!important;padding-right: inherit;" />Registration</a>
+          </li>
+          <hr>
+          <li>
+            <a href="contact.html"><img src="images/sidebar/contact.ico"
+                style="height:30px!important;padding-right: inherit;" />Contact</a>
+          </li>
+          <hr>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <!--Slider-->
@@ -150,119 +189,104 @@
 
 
   <!--ABout US-->
-  <section id="about" class="bottom25">
-    <div class="container margin_top">
+  <section id="ibm" class="bottom25">
+    <div class="container margin10">
       <div class="row">
-        <div class="col-md-7 col-sm-6 priorty wow fadeInLeft" data-wow-delay="300ms">
-          <h2 class="heading bottom25">Welcome to Kalamassery CSP <span class="divider-left"></span></h2>
-          <p class="half_space" style="text-align:justify;">Historically Kerala is well known for global exporting of
-            quality human resource. In 2012, the state embarked on an ambitious initiative called
-            Additional Skill Acquisition Programme (ASAP) to further equip its students with the skills demanded by
-            prominent industries along with the regular studies.
+        <div class="col-md-12 priorty wow fadeInLeft" data-wow-delay="300ms">
+          <center><h2 class="heading bottom25">IBM<span class="divider-center"></span></h2></center>
+          <ul>
+            <li><i class="design fa fa-hand-o-right"></i>IBM is a global technology and innovation company headquartered
+              in Armonk, NY. Started in 1911</li>
+            <li><i class="design fa fa-hand-o-right"></i>Largest technology employer in the world and employ 380,000
+              IBMers serving clients in 170 countries</li>
+            <li><i class="design fa fa-hand-o-right"></i>A century of innovation - One of only 2 companies to remain in
+              the top 25 Industrial companies since 1900</li>
+            <li><i class="design fa fa-hand-o-right"></i>In 2017, IBM’s Revenue was USD 79.1 billion revenue (Cloud- USD
+              17 Billion)</li>
+            <li><i class="design fa fa-hand-o-right"></i>We live at the intersection of business and technology and
+              today, we are a cognitive solutions and cloud platform company, transforming entire industries</li>
+          </ul>
+          <p class="text-justify margin10 half_space">The IBM Innovation Centre for Education
+            collaborates with universities to co-create degrees that let industry professionals and students interact
+            and prepare for solving the problems of tomorrow. IBM works with its partner ecosystem as well as thousands
+            of clients worldwide to understand the skills needed by working professionals in their organizations. The
+            IBM Innovation Centre for Education initiative aims to leverage the proven academic excellence of the
+            existing university degree (i.e., developed scientific course content, attained academic accreditations,
+            student attraction, faculty retention and local community support) and augment the degree with specific
+            industry and/or technology specializations, bridging the gap between academia and industry and giving to
+            students access to relevant concepts of a rapidly changing reality earlier in their professional formation.
+            In these degree programs, the focus is on project-based learning and industry interaction. Students’ work is
+            constantly under review and receives input from industry specialists that supports learning. Better faculty
+            training and a support from industry subject matter experts also means that faculty skills also remain
+            up-to-date. Students graduate able to meet real IT challenges and are well-prepared to enter the workforce.
           </p>
-          <p style="text-align:justify;">In order to strengthen its services to people and the industry, the idea of
-            setting up Community Skill Parks has been mooted under ASAP subsequently.
-            Community Skill Parks are large state-of-the-art multi skill training facilities that are being built across
-            the state for providing higher order skill training
-            to citizens with a vision to better their livelihood along with making the state economy stronger.
-          </p>
-          <!-- <div class="row">
-            <div class="col-md-6">
-              <div class="about-post">
-                <a class="border_radius"><img src="images/hands.png" alt="hands"></a>
-                <h4>Heavy Machinery</h4>
-                <p>Renean sit amet massa</p>
-              </div>
-              <div class="about-post">
-                <a class="border_radius"><img src="images/awesome.png" alt="hands"></a>
-                <h4>Precision</h4>
-                <p>Renean sit amet massa</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="about-post">
-                <a class="border_radius"><img src="images/maintenance.png" alt="hands"></a>
-                <h4>IT Lab</h4>
-                <p>Renean sit amet massa</p>
-              </div>
-              <div class="about-post">
-                <a class="border_radius"><img src="images/home.png" alt="hands"></a>
-                <h4>Activity</h4>
-                <p>Renean sit amet massa</p>
-              </div>
-            </div>
-          </div> -->
-        </div>
-        <div class="col-md-5 col-sm-6">
-          <img src="images/kerala_uni3.jpeg" class="img-responsive">
         </div>
       </div>
     </div>
-
-    <!--<div class="container">
-    <div class="row">
-    <div class="icon_wrap padding-bottom-half clearfix">
-      <div class="col-sm-4 icon_box text-center heading_space wow fadeInUp" data-wow-delay="300ms">
-         <i class="icon-icons9"></i>
-         <h4 class="text-capitalize bottom20 margin10">Unlimited Features</h4>
-         <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      <div class="col-sm-4 icon_box text-center heading_space wow fadeInUp" data-wow-delay="400ms">
-         <i class="icon-icons9"></i>
-         <h4 class="text-capitalize bottom20 margin10">Unlimited Features</h4>
-         <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      <div class="col-sm-4 icon_box text-center heading_space wow fadeInUp" data-wow-delay="500ms">
-         <i class="icon-icons20"></i>
-         <h4 class="text-capitalize bottom20 margin10">Unlimited Features</h4>
-         <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      <div class="col-sm-4 icon_box text-center heading_space wow fadeInUp" data-wow-delay="600ms">
-         <i class="icon-globe"></i>
-         <h4 class="text-capitalize bottom20 margin10">Unlimited Features</h4>
-         <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      <div class="col-sm-4 icon_box text-center heading_space wow fadeInUp" data-wow-delay="400ms">
-         <i class="icon-layers"></i>
-         <h4 class="text-capitalize bottom20 margin10">Unlimited Features</h4>
-         <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      <div class="col-sm-4 icon_box text-center heading_space wow fadeInUp" data-wow-delay="500ms">
-         <i class="icon-laptop"></i>
-         <h4 class="text-capitalize bottom20 margin10">Unlimited Features</h4>
-         <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      </div>
-    </div>
-  </div> -->
-
   </section>
   <!--ABout US-->
 
-
-  <!--Certification-->
-  <section id="about" class="padding" style="padding-top:0px;">
-    <div class="container margin_top">
+  <!--ASAP-->
+  <section id="asap" class="bottom25">
+    <div class="container margin10">
       <div class="row">
-        <div class="col-md-12">
-          <h2 class="heading bottom25">IBM Global Certification Program <span class="divider-left"></span></h2>
-          <p class="half_space" style="text-align:justify;">The IBM ICE program provides a framework that helps to
-            simulate a real-life work environment of an IT organization on-campus. The ICE online platform provides the
-            courseware content and labs access to the students, it also tracks students progress and connects to
-            industry aligned projects and mentors. The IBM ICE program aims to contribute to the transformation to a
-            knowledge society supporting the implementation of new educational models that will increase the alignment
-            of student skills with the current/future regional market needs and IT industry trends. IBM will provide
-            global certification to the students and faculties who undergo IBM ICE program successfully. You can achieve
-            your goal to become a Data Scientist by choosing IBM ICE specialized courses offered.
+        <div class="col-md-12 priorty">
+         <center><h2 class="heading bottom25">Additional Skill Aquisition Program<span class="divider-left"></span></h2></center>
+          <p class="text-justify margin10 half_space">To address the concern of the growing
+            educated-unemployment rates of the State, the SSDP or State Skill Development Project was enacted, in the
+            year 2012. This was following the realization that Kerala has the human resource and the potential to soar
+            up to become a radial point for skilled manpower to the world by virtue of its demographic dividend. SSDP
+            involves the participation of industries and training partners to execute the project ASAP (Additional Skill
+            Acquisition Programme). ASAP, under the General and Higher Education Departments, works on the preventive
+            side by training Higher Graduate students, offering skill courses to students in need of immediate
+            employment. ASAP offers varied skill sets to the undergraduate students through its foundation module and
+            skill training program. ASAP has partnered with several agencies in the Centre as well as State to implement
+            special skilling programmes for the needy student populace of the state.
           </p>
+          <p class="text-justify">Since its inception, ASAP has been relentlessly ‘empowering’ the youth of Kerala
+            through globally-relevant ‘employable skills’ in several sectors. ASAP also proved its capabilities in
+            course framework development, courseware development, trainer development and quality assurance. In order to
+            strengthen its services to people and the industry, the idea of setting up Community Skill Parks has been
+            mooted under ASAP subsequently. Community Skill Parks are large state-of-the-art multi skill training
+            facilities that are being built across the state for providing higher order skill training to citizens with
+            a vision to better their livelihood along with making the state economy stronger.</p>
         </div>
       </div>
-  </section><br>
-  <!-- end certification -->
+    </div>
+  </section>
 
+  <!--collaboration-->
+  <section id="coll" class="bottom25">
+    <div class="container margin10">
+      <div class="row">
+        <div class="col-md-12 priorty">
+         <center><h2 class="heading bottom25">IBM In Kerala - Community Skill Park Kalamassery<span
+              class="divider-left"></span></h2></center>
+          <p class="text-justify margin10 half_space">To address the concern of the growing educated-unemployment rates
+            of the State, the SSDP or State Skill Development Project was enacted, in the year 2012. This was following
+            the realization that Kerala has the human resource and the potential to soar up to become a radial point for
+            skilled manpower to the world by virtue of its demographic dividend. SSDP involves the participation of
+            industries and training partners to execute the project ASAP (Additional Skill Acquisition Programme). ASAP,
+            under the General and Higher Education Departments, works on the preventive side by training Higher Graduate
+            students, offering skill courses to students in need of immediate employment. ASAP offers varied skill sets
+            to the undergraduate students through its foundation module and skill training program. ASAP has partnered
+            with several agencies in the Centre as well as State to implement special skilling programmes for the needy
+            student populace of the state.
+          </p>
+          <p class="text-justify">Since its inception, ASAP has been relentlessly ‘empowering’ the youth of Kerala
+            through globally-relevant ‘employable skills’ in several sectors. ASAP also proved its capabilities in
+            course framework development, courseware development, trainer development and quality assurance. In order to
+            strengthen its services to people and the industry, the idea of setting up Community Skill Parks has been
+            mooted under ASAP subsequently. Community Skill Parks are large state-of-the-art multi skill training
+            facilities that are being built across the state for providing higher order skill training to citizens with
+            a vision to better their livelihood along with making the state economy stronger.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Courses -->
-  <section id="courses" class="padding parallax" style="padding-bottom: 0px;">
+  <!-- <section id="courses" class="padding parallax" style="padding-bottom: 0px;">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -275,23 +299,25 @@
             <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="6000" id="myCarousel">
               <div class="carousel-inner">
                 <div class="item active">
-                  <div class="col-md-4 col-sm-6 col-xs-12"><a><img src="images/blockchain.jpg"
-                        class="img-responsive"></a>
-                    <h3 class="bottom15">Blockchain</h3>
-                    <p class="bottom15" style="text-align: justify;"><a href="blockchain.html">
-                        Block chain is “an open, distributed ledger that can record transactions between two parties
-                        efficiently and in a verifiable and permanent way".
+                  <div class="col-md-4 col-sm-6 col-xs-12"><a><img src="images/AI&ML.jpg" class="img-responsive"></a>
+                    <h3 class="bottom15">Artificial Intelligence</h3>
+                    <p class="bottom15" style="text-align: justify;"><a href="artificial.html">This course helps to gain
+                        knowledge
+                        on how artificial intelligence makes it possible for machines to learn from experience, adjust
+                        to new
+                        inputs and perform human-like tasks
                       </a>
                     </p>
                   </div>
                 </div>
 
                 <div class="item">
-                  <div class="col-md-4 col-sm-6 col-xs-12"><a><img src="images/AI&ML.jpg" class="img-responsive"></a>
-                    <h3 class="bottom15">Artificial Intellegence</h3>
-                    <p class="bottom15" style="text-align: justify;"><a href="artificial.html">AI and ML have reached a
-                        new space in the
-                        industry where the whole workplace is getting better.
+                  <div class="col-md-4 col-sm-6 col-xs-12"><a><img src="images/blockchain.jpg"
+                        class="img-responsive"></a>
+                    <h3 class="bottom15">Blockchain</h3>
+                    <p class="bottom15" style="text-align: justify;"><a href="blockchain.html">
+                        This course provides an overview on the blockchain, the technologies involved in blockchain, the
+                        components of blockchain and its advantages
                       </a>
                     </p>
                   </div>
@@ -302,29 +328,8 @@
                         class="img-responsive"></a>
                     <h3 class="bottom15">Business Analytics</h3>
                     <p class="bottom15" style="text-align: justify;"><a href="BA.html">
-                        Business analytics focuses on developing new insights and understanding of business performance
-                        based on data and statistical methods.
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="col-md-4 col-sm-6 col-xs-12"><a><img src="images/datascience.jpg"
-                        class="img-responsive"></a>
-                    <h3 class="bottom15">Data Science</h3>
-                    <p class="bottom15" style="text-align: justify;"><a href="datascience.html">Data science answers the
-                        open-ended questions as to “what”, “how” and “why” events occur
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="col-md-4 col-sm-6 col-xs-12"><a><img src="images/IOT.jpg" class="img-responsive"></a>
-                    <h3 class="bottom15">Internet of Things</h3>
-                    <p class="bottom15" style="text-align: justify;"><a href="iot.html">IoT plays a vital role in the
-                        digital economy as it focusses on utilizing new technologies
+                        This course introduces big data analytics for all business professionals, including those
+                        with no prior analytics experience
                       </a>
                     </p>
                   </div>
@@ -334,9 +339,32 @@
                   <div class="col-md-4 col-sm-6 col-xs-12"><a><img src="images/cyber_security1.jpg"
                         class="img-responsive"></a>
                     <h3 class="bottom15">Cyber Security</h3>
-                    <p class="bottom15" style="text-align: justify;"><a href="cybersecu.html">Cyber security across
-                        various digital channels of the communication and transactions is of paramount importance
-                        to businesses </a>
+                    <p class="bottom15" style="text-align: justify;"><a href="cybersecu.html">This course introduces the
+                        basic cyber security concepts, enable you to identify root causes of vulnerabilities in a
+                        network system and distinguish them from the threats </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-md-4 col-sm-6 col-xs-12"><a><img src="images/datascience.jpg"
+                        class="img-responsive"></a>
+                    <h3 class="bottom15">Data Science</h3>
+                    <p class="bottom15" style="text-align: justify;"><a href="datascience.html">This course provides an
+                        overview on what data science is and how it can add value to your business. The tools and
+                        techniques used for analysing the data is also prsented here
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-md-4 col-sm-6 col-xs-12"><a><img src="images/IOT.jpg" class="img-responsive"></a>
+                    <h3 class="bottom15">Internet of Things</h3>
+                    <p class="bottom15" style="text-align: justify;"><a href="iot.html">This course covers in-depth
+                        concepts of IoT framework, IoT ecosystem, IoT solution architecture, networking protocols and
+                        application layer protocols
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -349,11 +377,11 @@
                 <i class="glyphicon glyphicon-chevron-right"></i>
               </a>
             </div>
-          </div>
+          </div> -->
 
 
 
-          <!--<div class="slider_wrapper">
+  <!--<div class="slider_wrapper">
           <div id="course_slider" class="owl-carousel">
             <div class="item">
               <div class="image bottom20">
@@ -408,15 +436,15 @@
           </div>
         </div>-->
 
-        </div>
+  <!-- </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Courses -->
 
 
   <!--Fun Facts-->
-  <section id="facts" class="padding" style="background: rgb(229, 227, 223);padding-bottom: 0px;">
+  <!-- <section id="facts" class="padding" style="background: rgb(229, 227, 223);padding-bottom: 0px;">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center wow fadeInDown">
@@ -451,10 +479,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--contact us-->
-  <div id="contact">
+  <!-- <div id="contact">
     <section id="parallax" class="parallax">
       <div class="container margin_get">
         <div class="row">
@@ -490,19 +518,19 @@
                   frameborder="0" allowfullscreen></iframe>
                 <!-- <iframe id="map"
                   src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62850.88182734946!2d76.40027805335045!3d10.084323505032122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sASAP+Community+Skill+Park++NAD+Rd%2C+HMT+Colony%2C+North+Kalamassery%2C+HMT+Kalamassery%2C+Ernakulam%2C+Kerala+683503!5e0!3m2!1sen!2sin!4v1560225280936!5m2!1sen!2sin" 
-                  frameborder="0" allowfullscreen></iframe> -->
+                  frameborder="0" allowfullscreen></iframe> --
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  </div>
+  </div> -->
 
 
 
   <!--login modal-->
-  <div class="container">
+  <!-- <div class="container">
     <div class="modal fade" id="login" role="dialog" style="padding-right:0px;">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -522,7 +550,7 @@
                                   title="Click to login">
                                   <img src="images/CATIA-logo.png" alt="CATIA" class="logo ">
                               </a>
-                          </div> -->
+                          </div> --
             </div>
           </div>
           <div class="modal-footer">
@@ -531,7 +559,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- modal end -->
 
   <!--registration modal-->
@@ -606,7 +634,7 @@
 
 
   <!--FOOTER-->
-  <footer class="padding-top">
+  <!-- <footer class="padding-top">
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-4 footer_panel bottom25">
@@ -620,7 +648,7 @@
           <li><a href="#." class="dribble"><i class="icon-dribbble5"></i></a></li>
           <li><a href="#." class="instagram"><i class="icon-instagram"></i></a></li>
           <li><a href="#." class="vimo"><i class="icon-vimeo4"></i></a></li>
-        </ul>-->
+        </ul>--
         </div>
 
         <div class="col-md-4 col-sm-4 footer_panel bottom25">
@@ -635,25 +663,27 @@
 
         <div class="col-md-4 col-sm-4 footer_panel bottom25">
           <h3 class="heading bottom25">Keep in Touch <span class="divider-left"></span></h3>
-          <p class=" address"><i class="icon-map-pin"></i>Community Skill Park </p>
-          <p class=" address"> 3rd Floor, Trans Towers Vazhuthacaud, Thiruvananthapuram Kerala, India Pin Code: 695014
-          </p>
+          <p class=" address"><i class="icon-map-pin"></i>ASAP Community Skill Park </p>
+          <p class=" address">NAD Rd, HMT Colony, North Kalamassery, HMT Kalamassery,
+              Ernakulam, Kerala 683503</p>
           <p class=" address"><i class="icon-phone"></i>080 4140 0440</p>
           <p class=" address"><i class="icon-mail"></i><a href="mailto:info@phemesoft.com">info@phemesoft.com</a></p>
         </div>
       </div>
     </div>
-  </footer>
-  <div class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <!--<p>Copyright &copy; 2019 <a href="#.">CSP</a>. all rights reserved.</p>-->
-          <p>All rights reserved &copy; IBM.</p>
+  </footer> -->
+  <footer>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <!--<p>Copyright &copy; 2019 <a href="#.">CSP</a>. all rights reserved.</p>-->
+            <p>All rights reserved &copy; IBM India</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </footer>
   <!--FOOTER ends-->
 
 
@@ -694,6 +724,32 @@
         next.children(':first-child').clone().appendTo($(this));
       }
     });
+
+    // navbar icon
+
+    function openNav() {
+      document.getElementById("mySidenav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.display = "none";
+    }
+
+    //  dropdown
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
 
   </script>
 
