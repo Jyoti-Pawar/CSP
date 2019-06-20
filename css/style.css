@@ -1747,6 +1747,7 @@ p.scrolldown {
   }
   .menutop{
 	top: 215px !important;
+	width: 40%;
   }
   .ulpad{
 	list-style: inherit !important;
