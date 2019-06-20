@@ -38,7 +38,8 @@
     <!--Header-->
     <header>
         <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
-            <div class="container">
+            <!-- <div class="container"> -->
+        <div class="header">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">
                         <img src="images/IBM_ICE.jpg" alt="Logo" style="width: 200px !important;"
@@ -70,8 +71,8 @@
             </div>
         </nav>
 
-        <div class="navbar-fixed-top main-menu-continer" style="top: 200px !important;">
-            <button type="button" class="btn menubar-toggle styl" onclick="openNav()">
+        <div class="navbar-fixed-top main-menu-continer menutop">
+            <button type="button" class="btn menubar-toggle styl" onmouseover="openNav()">
                 <!-- <i class="fa fa-bars"></i> -->Menu
             </button>
 
@@ -207,18 +208,18 @@
         <div class="container">
                 <h2 class="heading bottom25">Market Trends And Predictions<span class="divider-left"></span></h2>
              <div class="row">
-                <div class="col-md-7">
-                    <img class="img-responsive" src="images/BA/market-graph.jpg" alt="graph">
-                </div>
                 <div class="col-md-5">
                     <p class="half_space text-justify">The global Business Analytics software market size was 49700 million US$ and it is expected to reach 104000 million US$ by the end of 2025, with a CAGR of 9.7% during 2018-2025.
                     </p>
                     <h4 class="siz">Salary Trends</h4>
-                    <ul style="list-style: inherit;color: #5b5b5b;">
+                    <ul class="ulpad">
                             <li>Globally average salary is $74k per annum</li>
                             <li>Average salary in India is INR 70lpa across all skill sets</li>
                     </ul>
-                </div>                
+                </div>                    
+                <div class="col-md-7">
+                        <img class="img-responsive" src="images/BA/market-graph.jpg" alt="graph">
+                    </div>            
             </div>
         </div>
     </section>
@@ -227,13 +228,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="col-sm-4">
+                    <img class="img-responsive" src="images/AIML/skills.jpg">
+                    <!-- <div class="col-sm-4">
                         <img class="img-responsive" src="images/AIML/jobs.jpg">
                     </div>
                     <div class="col-sm-6">
                         <div class="item">
                             <h4 class="siz">Job Roles</h4>
-                            <ul style="list-style: inherit;color: #5b5b5b;">
+                            <ul class="ulpad">
                                     <li>Business analyst </li>
                                     <li>Business intelligence analyst</li>
                                     <li>Technical business analyst</li>
@@ -241,22 +243,40 @@
                                     <li>Product analyst</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-md-6">
-                    <div class="col-sm-4">
+                        <div class="item">
+                                <h4 class="siz">Job Roles</h4>
+                                <ul class="ulpad">
+                                        <li>Business analyst </li>
+                                        <li>Business intelligence analyst</li>
+                                        <li>Technical business analyst</li>
+                                        <li>Lead business analyst</li>
+                                        <li>Product analyst</li>
+                                </ul>
+                            </div><br>
+                            <div class="item">
+                                    <h4 class="siz">Skills Required</h4>
+                                    <ul class="ulpad">
+                                            <li>Programming</li>
+                                            <li>Analytics</li>
+                                            <li>Data visualization </li>
+                                    </ul>
+                                </div>
+                    <!-- <div class="col-sm-4">
                         <img class="img-responsive" src="images/AIML/skills.jpg">
                     </div>
                     <div class="col-sm-6">
                         <div class="item">
                             <h4 class="siz">Skills Required</h4>
-                            <ul style="list-style: inherit;color: #5b5b5b;">
+                            <ul class="ulpad">
                                     <li>Programming</li>
                                     <li>Analytics</li>
                                     <li>Data visualization </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
