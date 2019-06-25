@@ -1518,7 +1518,7 @@ input[type=checkbox] {
 /* new navbar */
 
 .sidenav {
-	display: none;
+	/* display: none; */
 	height: 100%;
 	width: 225px;
 	/* width: 241px; */
@@ -1679,10 +1679,11 @@ input[type=checkbox] {
 }
 .stuck {
 	position: fixed;
-	bottom: 64px;
-	right: 10px;
+	bottom: 10px;
+	/* right: 10px; */
+	left: 2px;
 	transform: translateY(100%);
-	width: 260px;
+	width: 200px;
 	height: 145px;
 	animation: fade-in-up .25s ease forwards;
 	z-index: 999;
@@ -1755,3 +1756,28 @@ p.scrolldown {
 	color: #5b5b5b;
 	padding-left: 15px;
   }
+
+  /* @media screen and (min-width:45em){
+	.sidenav{
+		width: 200px !important;
+	}
+} */
+.top-right {
+    position: fixed;
+	/* align-items: center; */
+	border-radius: 16px;
+    top: 250px;
+    right: 0px;
+	transform: rotate(90deg);
+	border: none;
+    /* transform: rotate(90deg) scaleX(-1); */
+    transform-origin: top right;
+	background: #3B5998;
+	color: white;
+	opacity: 0.8;
+    font-size: 20px;
+    padding: 4px 15px;
+}
+.content{
+	transform: scaleX(-1);
+}
