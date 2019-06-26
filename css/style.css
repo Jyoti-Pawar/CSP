@@ -1781,3 +1781,6 @@ p.scrolldown {
 .content{
 	transform: scaleX(-1);
 }
+.displaynone{
+	display: none;
+}
